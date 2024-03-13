@@ -2,32 +2,79 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@keyframes blinkcursor {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.typing-cursor {
+  display: inline-block;
+  width: 1ch;
+  background-color: currentColor;
+  animation: blinkcursor 0.75s step-end infinite alternate;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@media (min-width: 400px) {
+  .background-gradient::before {
+    background: radial-gradient(
+      20% 50% at 50% 50%,
+      rgba(71, 127, 247, 0.376) 0%,
+      rgba(37, 38, 44, 0) 100%
+    );
+    z-index: -10;
+    content: "";
+    position: absolute;
+    inset: 0px;
+    transform: scale(1);
+    pointer-events: none;
+  } 
+
+  .details-blur::before {
+    background: radial-gradient(
+      20% 50% at 50% 50%,
+      rgba(118, 161, 255, 0.29) 0%,
+      rgba(37, 38, 44, 0) 100%
+    );
+    z-index: -10;
+    content: "";
+    position: absolute;
+    inset: 0px;
+    transform: scale(2);
+    pointer-events: none;
   }
+
+  .background-blur::before {
+    background: radial-gradient(
+      20% 50% at 50% 50%,
+      rgba(71, 127, 247, 0.3) 0%,
+      rgba(37, 38, 44, 0) 100%
+    );
+    z-index: -10;
+    content: "";
+    position: absolute;
+    inset: 0px;
+    transform: scale(3);
+  }
+}
+
+.blur-effect::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 300px;
+  background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(23, 24, 28, 1)); /* Use the background color of the items */
+}
+
+.sponsor-logo {
+  display: block;
+  max-height: 100%;
+  width: auto;
+  object-fit: contain;
 }
