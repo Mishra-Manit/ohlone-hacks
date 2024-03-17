@@ -43,14 +43,19 @@ export default function Ohlone() {
                             <Balancer className="w-1/2 sm:w-1/2 text-sm sm:text-lg font-light">
                                 Registration is open to all current high school students in the 2023-2024 academic year.
                             </Balancer>
-                            <h1 className="w-1/2 font-mono sm:w-1/4 text-right text-2xl lg:text-[3vw] leading-none">//</h1>
+                            <h1 className="w-1/2 font-mono sm:w-1/4 text-right text-2xl lg:text-[3vw] leading-none">*</h1>
                         </div>
                     </div>
                 </div>
             </div>
             {/* rest of the sections */}
             <div className="">
-                <div className="h-[54vh] mx-10 overflow-hidden relative brightness-125 transition-all">
+                <div className="bg-neutral-100 mx-10 h-[50vh] flex items-center justify-center border border-dashed mb-20">
+                    <text className="text-5xl opacity-10 select-none">
+                        Coming soon...
+                    </text>
+                </div>
+                {/* <div className="h-[54vh] mx-10 overflow-hidden relative brightness-125 transition-all">
                     <Image
                         src="/images/group_photo.jpg"
                         alt="2024 Group Photo"
@@ -65,9 +70,9 @@ export default function Ohlone() {
                     <text className="">// RECAP</text>
                     <text className="hidden sm:block">IRVINGTON HIGH SCHOOL</text>
                     <StyledLink href="/photos" target="_blank" text={"View Photos"} arrow={true} />
-                </div>
+                </div> */}
                 <div className="my-10 mx-10 text-lg">
-                    <h1 className="font-mono mb-10">// WHY VIKING HACKS</h1>
+                    {/* <h1 className="font-mono mb-10">// WHY VIKING HACKS</h1> */}
                     <div className="grid grid-cols-1 grid-rows-3 divide-y border-y">
                         <div className="py-10">
                             <div className="flex flex-col sm:flex-row justify-between">
