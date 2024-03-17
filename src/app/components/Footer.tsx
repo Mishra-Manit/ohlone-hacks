@@ -8,25 +8,19 @@ export default function Footer() {
                     ERIC LAN
                 </text>
                 <text>
-                    IRVINGTON COMPUTER SCIENCE CLUB
-                </text>
-                <text>
-                    IRVINGTON HACK CLUB
-                </text>
-                <text>
                     &copy; 2024
                 </text>
             </div>
             {/* TODO: use image instead of text */}
             <Image
-                src="/images/VIKINGHACKS_TEXT.png"
+                src="/images/OH_LONG.png"
                 className="hidden sm:block"
                 alt="Viking Hacks"
                 width={1881}
                 height={215}
             />
             <Image
-                src="/images/VIKINGHACKS_COL_TEXT.png"
+                src="/images/OH_TALL.png"
                 className="block sm:hidden"
                 alt="Viking Hacks"
                 width={1881}

@@ -23,7 +23,7 @@ export default function Ohlone() {
                             Review our prospectus
                         </Link> */}
                     </div>
-                    <div className="pointer-events-none font-mono text-[10vw] tracking-tighter leading-none mx-10">
+                    <div className="pointer-events-none font-mono text-[6vw] tracking-tighter leading-none mx-10">
                         We return. <br /> Ohlone awaits
                         <span className="select-none typing-cursor">.</span>
                     </div>
