@@ -13,16 +13,13 @@ const navItems = {
 export default function Header() {
 	return (
 		<div className="w-full px-10 py-6 border-b shadow-[0_0_15px_0_rgba(0,0,0,0.1)] font-mono font-light flex justify-between items-center">
-			<div className="hidden sm:block">
-				VIKING HACKS
-			</div>
 			<div>
 				<Image
-					alt="Viking Hacks Logo"
-					src="/images/VH_SINGLE_LOGO_BLACK.png"
-					className="w-6 select-none"
-					width={624}
-					height={769}
+					alt="Ohlone Hacks Logo"
+					src="/images/OHLONE_HACKS_TRANSPARENT.png"
+					className="w-6 select-none invert"
+					width={300}
+					height={300}
 				/>
 			</div>
 			<div className="flex gap-5">
