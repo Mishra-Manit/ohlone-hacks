@@ -16,7 +16,7 @@ const posts = {
 
 export default function PostSection() {
     return (
-        <div className="grid grid-cols-1 sm:grid-cols-2 grid-rows-2 sm:grid-rows-1 gap-4 mx-10">
+        <div className="my-10 grid grid-cols-1 sm:grid-cols-2 grid-rows-2 sm:grid-rows-1 gap-4 mx-10">
             {Object.entries(posts).map(([path, { img, name, description }]) => {
                 return (
                     <Link key={path} href={path} target={"_self"} className="
