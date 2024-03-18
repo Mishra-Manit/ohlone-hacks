@@ -7,7 +7,7 @@ const posts = {
         name: 'Prospectus',
         description: 'Explore sponsorship opportunities',
     },
-    '/culture': {
+    '/': {
         img: '/images/culture.png',
         name: 'Culture',
         description: 'Code the unseen, create the unprecedented',
