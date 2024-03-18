@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 import NumberedDetails from './components/NumberedDetails';
+import PostSection from './components/PostSection';
 import Hero from './components/Hero';
 import Footer from "./components/Footer"
 
@@ -10,13 +11,7 @@ export default function Ohlone() {
             {/* hero section */}
             <Hero />
             {/* rest of the sections */}
-            <div className="">
-                <div className="bg-neutral-100 mx-10 h-[50vh] flex items-center justify-center border border-dashed mb-20">
-                    <text className="text-5xl opacity-10 select-none">
-                        Coming soon...
-                    </text>
-                </div>
-            </div>
+            <PostSection />
             <NumberedDetails />
             {/* colored section */}
             <div className="mt-32 bg-lime-400 py-10 flex flex-col items-center">
