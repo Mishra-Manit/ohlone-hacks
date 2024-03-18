@@ -25,6 +25,7 @@ export default function Header() {
 						<Link key={path} href={path} target={"_self"} className="
 						hover:underline
 						underline-offset-4
+						font-medium
 						">{name}</Link>
 						// <StyledLink key={path} href={path} target={"_self"} text={name} arrow={false} />
 					);

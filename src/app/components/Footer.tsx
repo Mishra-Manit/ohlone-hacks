@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function Footer() {
     return (
-        <div className="mx-10 font-mono">
+        <div className="mx-10 font-mono pointer-events-none">
             <div className="flex justify-between mt-48">
                 <text>
                     ERIC LAN
@@ -14,15 +14,15 @@ export default function Footer() {
             {/* TODO: use image instead of text */}
             <Image
                 src="/images/OH_LONG.png"
-                className="hidden sm:block"
-                alt="Viking Hacks"
+                className="hidden sm:block select-none"
+                alt="Ohlone Hacks"
                 width={1881}
                 height={215}
             />
             <Image
                 src="/images/OH_TALL.png"
-                className="block sm:hidden"
-                alt="Viking Hacks"
+                className="block sm:hidden select-none"
+                alt="Ohlone Hacks"
                 width={1881}
                 height={215}
             />
