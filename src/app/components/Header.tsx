@@ -9,7 +9,7 @@ const navItems = {
 };
 export default function Header() {
 	return (
-		<div className="w-full px-10 py-6 border-b shadow-[0_0_15px_0_rgba(0,0,0,0.1)] font-mono font-light flex justify-between items-center">
+		<div className="w-full px-10 py-6 border-b shadow-[0_0_15px_0_rgba(0,0,0,0.1)] font-light flex justify-between items-center">
 			<Link href="/" target="_self" className="hover:cursor-pointer">
 				<Image
 					alt="Ohlone Hacks Logo"
