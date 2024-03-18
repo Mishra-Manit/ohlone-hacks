@@ -18,7 +18,7 @@ export default function Ohlone() {
                         <span className="bg-lime-400 w-min rounded-full px-2">
                             Sponsors
                         </span>
-                        <StyledLink href="/prospectus.pdf" target="_blank" text={"Review our prospectus"} className={"w-max"} arrow={true} />
+                        <StyledLink href="/prospectus" target="_blank" text={"Review our prospectus"} className={"w-max"} arrow={true} />
                         {/* <Link href="/prospectus.pdf" target="_blank" className="w-max h-full hover:underline underline-offset-2 decoration-dotted decoration-2 decoration-neutral-500 after:content-['_↗']">
                             Review our prospectus
                         </Link> */}
