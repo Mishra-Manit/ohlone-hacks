@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Balancer from 'react-wrap-balancer'
 
+import RectButton from './RectButton';
 import Header from './Header';
 import StyledLink from './StyledLink';
 
