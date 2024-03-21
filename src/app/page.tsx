@@ -20,7 +20,7 @@ export default function Ohlone() {
                     <h1 className="text-[10vw] lg:text-[8vw]">
                         Don&apos;t miss out.
                     </h1>
-                    <Link href="/ohlone24" target="_self" className="border-4 border-black hover:bg-transparent hover:text-black bg-black text-lime-400 py-2 lg:py-4 px-10 text-[5vw] lg:text-[3vw] rounded-full transition-all">
+                    <Link href="/register" target="_self" className="border-4 border-black hover:bg-transparent hover:text-black bg-black text-lime-400 py-2 lg:py-4 px-10 text-[5vw] lg:text-[3vw] rounded-full transition-all">
                         Register now
                     </Link>
                 </div>

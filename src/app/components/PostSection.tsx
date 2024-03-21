@@ -7,7 +7,7 @@ const posts = {
         name: 'Prospectus',
         description: 'Explore sponsorship opportunities',
     },
-    '/': {
+    'https://instagram.com/ohlonehacks24': {
         img: '/images/culture.png',
         name: 'Culture',
         description: 'Code the unseen, create the unprecedented',
@@ -19,7 +19,7 @@ export default function PostSection() {
         <div className="my-10 grid grid-cols-1 sm:grid-cols-2 grid-rows-2 sm:grid-rows-1 gap-4 mx-10">
             {Object.entries(posts).map(([path, { img, name, description }]) => {
                 return (
-                    <Link key={path} href={path} target={"_self"} className="
+                    <Link key={path} href={path} target={"_blank"} className="
                         group
                         h-[50vh]
 						underline-offset-4

@@ -3,7 +3,7 @@ import StyledLink from "./StyledLink";
 import Link from 'next/link';
 
 const navItems = {
-	'/ohlone24': {
+	'/register': {
 		name: 'Register',
 	},
 };
