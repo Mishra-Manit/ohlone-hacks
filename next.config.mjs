@@ -7,6 +7,11 @@ const nextConfig = {
                 destination: '/files/prospectus.pdf',
                 permanent: true,
             },
+            {
+                source: '/medical',
+                destination: '/files/medical.pdf',
+                permanent: true,
+            },
         ]
     },
 };
