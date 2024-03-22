@@ -11,7 +11,7 @@ interface StyledProps {
 
 export default function StyledLink(props: StyledProps) {
     const { href, target, text, arrow, className } = props;
-    const greenColor = "163, 230, 53"
+    const greenColor = "255, 85, 24"
     const lineHeight = "3px"
     const baseTransparency = 1
     const customStyle = {
@@ -28,10 +28,12 @@ export default function StyledLink(props: StyledProps) {
             onMouseEnter={(e) => {
                 e.currentTarget.style.backgroundImage = `linear-gradient(transparent 0, transparent calc(50% - ${lineHeight}), rgba(${greenColor}, 1) calc(50% - ${lineHeight}), rgba(${greenColor}, 1) 100%)`;
                 e.currentTarget.style.backgroundPosition = '0 100%';
+                e.currentTarget.style.color = "#FFFFFF";
             }}
             onMouseLeave={(e) => {
                 e.currentTarget.style.backgroundImage = `linear-gradient(transparent 0, transparent calc(50% - ${lineHeight}), rgba(${greenColor}, ${baseTransparency}) calc(50% - ${lineHeight}), rgba(${greenColor}, ${baseTransparency}) 100%)`;
                 e.currentTarget.style.backgroundPosition = '0 0';
+                e.currentTarget.style.color = "#000000";
             }}
         >
             {text}

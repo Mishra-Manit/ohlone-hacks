@@ -4,7 +4,7 @@ import StyledLink from './StyledLink';
 
 export default function NumberedDetails() {
     return (
-        <div className="mt-36 mb-10 mx-10 text-lg">
+        <div className="bg-lime-400 mt-36 mb-10 px-10 text-lg">
             {/* <h1 className="font-mono mb-10">// WHY VIKING HACKS</h1> */}
             <div className="grid grid-cols-1 grid-rows-3 divide-y border-y">
                 <div className="py-10">

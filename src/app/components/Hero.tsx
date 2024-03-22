@@ -12,7 +12,7 @@ export default function Hero() {
             <div className="">
                 <Header />
                 <div className="w-min flex gap-4 mt-10 mb-5 mx-10">
-                    <span className="bg-lime-400 w-min rounded-full px-2">
+                    <span className="bg-[#FF5518] text-white w-min rounded-full px-2">
                         Sponsors
                     </span>
                     <StyledLink href="/prospectus" target="_blank" text={"Review our prospectus"} className={"w-max"} arrow={true} />
@@ -30,11 +30,11 @@ export default function Hero() {
                 <div className="text-black my-10 mx-10">
                     <div className="flex justify-between items-end">
                         <div className="flex flex-col items-start gap-5">
-                            <div className="flex flex-col sm:flex-row gap-2">
-                                <Link href="/register" target="_blank" className="rounded-full px-5 text-lg py-3 bg-lime-400 hover:bg-lime-300 hover:shadow-[0_0_15px_0_rgba(163,230,53,0.5)] transition-all">
+                            <div className="flex flex-col sm:items-center sm:flex-row gap-2">
+                                <Link href="/register" target="_blank" className="text-white rounded-full px-5 text-lg py-2 bg-[#FF5518] hover:bg-[#ff723e] hover:shadow-[0_0_15px_0_rgba(255,85,24,0.5)] transition-all">
                                     Register now for free
                                 </Link>
-                                <Link href="https://hcb.hackclub.com/donations/start/ohlonehacks" target="_blank" className="rounded-full border px-5 text-lg py-3 hover:bg-black hover:text-white hover:border-transparent transition-all">
+                                <Link href="https://hcb.hackclub.com/donations/start/ohlonehacks" target="_blank" className="rounded-full border px-5 py-2 text-lg hover:bg-black hover:text-white hover:border-transparent transition-all">
                                     Donate
                                 </Link>
                             </div>
@@ -43,7 +43,7 @@ export default function Hero() {
                             </Balancer>
                         </div>
                         <div className="flex flex-col items-end">
-                            <h1 className="text-[3.5vw] bg-black text-white leading-none">APRIL</h1>
+                            <h1 className="text-[3.5vw] leading-none">APRIL</h1>
                             <h2 className="text-[10vw] leading-none">14</h2>
                         </div>
                         {/* <h1 className="w-1/2 font-mono sm:w-1/4 text-right text-2xl lg:text-[3vw] leading-none">*</h1> */}
