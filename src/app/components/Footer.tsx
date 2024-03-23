@@ -14,14 +14,14 @@ export default function Footer() {
             {/* TODO: use image instead of text */}
             <Image
                 src="/images/OH_LONG.png"
-                className="hidden sm:block select-none"
+                className="hidden sm:block select-none invert"
                 alt="Ohlone Hacks"
                 width={1881}
                 height={215}
             />
             <Image
                 src="/images/OH_TALL.png"
-                className="block sm:hidden select-none"
+                className="block sm:hidden select-none invert"
                 alt="Ohlone Hacks"
                 width={1881}
                 height={215}
