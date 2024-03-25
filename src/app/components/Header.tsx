@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const navItems = {
 	'/register': {
-		name: 'Register',
+		name: 'REGISTER',
 	},
 };
 export default function Header() {

@@ -12,7 +12,7 @@ export default function Hero() {
             <div className="">
                 <Header />
                 <div className="w-min flex gap-4 mt-10 mb-5 mx-10">
-                    <span className="bg-[#FF5518] text-white w-min rounded-full px-2">
+                    <span className="bg-[#0045F2] text-white w-min rounded-full px-2">
                         Sponsors
                     </span>
                     <StyledLink href="/prospectus" target="_blank" text={"Review our prospectus"} className={"w-max"} arrow={true} />
@@ -31,7 +31,7 @@ export default function Hero() {
                     <div className="flex justify-between items-end">
                         <div className="flex flex-col items-start gap-5">
                             <div className="flex flex-col sm:items-center sm:flex-row gap-2">
-                                <Link href="/register" target="_blank" className="text-white rounded-full px-5 text-lg py-2 bg-[#FF5518] hover:bg-[#ff723e] hover:shadow-[0_0_15px_0_rgba(255,85,24,0.5)] transition-all">
+                                <Link href="/register" target="_blank" className="text-white rounded-full px-5 text-lg py-2 bg-[#0045F2] hover:bg-[#5395ff] hover:shadow-[0_0_15px_0_rgba(0,69,242,0.5)] transition-all">
                                     Register now for free
                                 </Link>
                                 <Link href="https://hcb.hackclub.com/donations/start/ohlonehacks" target="_blank" className="rounded-full border px-5 py-2 text-lg hover:bg-black hover:text-white hover:border-transparent transition-all">

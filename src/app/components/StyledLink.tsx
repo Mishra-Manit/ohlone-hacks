@@ -11,7 +11,7 @@ interface StyledProps {
 
 export default function StyledLink(props: StyledProps) {
     const { href, target, text, arrow, className } = props;
-    const greenColor = "255, 85, 24"
+    const greenColor = "0, 69, 242"
     const lineHeight = "3px"
     const baseTransparency = 1
     const customStyle = {

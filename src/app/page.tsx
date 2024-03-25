@@ -14,13 +14,13 @@ export default function Ohlone() {
             <PostSection />
             <NumberedDetails />
             {/* colored section */}
-            <div className="mt-32 bg-[#FF5518] py-10 flex flex-col text-white items-center">
+            <div className="mt-32 bg-[#0045F2] py-10 flex flex-col text-white items-center">
                 {/* CTA */}
                 <div className="py-20 flex flex-col items-center gap-2 md:gap-0">
                     <h1 className="text-[10vw] lg:text-[8vw]">
                         Don&apos;t miss out.
                     </h1>
-                    <Link href="/register" target="_self" className="border-4 border-white hover:bg-transparent hover:text-white bg-white text-[#FF5518] py-2 lg:py-4 px-10 text-[5vw] lg:text-[3vw] rounded-full transition-all">
+                    <Link href="/register" target="_self" className="border-4 border-white hover:bg-transparent hover:text-white bg-white text-[#0045F2] py-2 lg:py-4 px-10 text-[5vw] lg:text-[3vw] rounded-full transition-all">
                         Register now
                     </Link>
                 </div>
