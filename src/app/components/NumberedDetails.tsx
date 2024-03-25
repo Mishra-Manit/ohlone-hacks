@@ -12,7 +12,7 @@ export default function NumberedDetails() {
                         <h1 className="w-1/6 font-mono font-light">01</h1>
                         <h1 className="w-full sm:w-2/6 text-4xl sm:text-3xl">April 14th, 2024</h1>
                         <div className="w-full sm:w-3/6">
-                            <Balancer className="text-sm lg:text-lg text-justify sm:text-left">Dive into 14 hours of pure innovation and coding at Ohlone Hacks 2024. It&apos;s not just an event; it&apos;s a marathon of creativity and tech. Mark your calendars for a day that could change your future.</Balancer>
+                            <Balancer className="text-sm lg:text-lg text-justify sm:text-left">Dive into 12 hours of pure innovation and coding at Ohlone Hacks 2024. It&apos;s not just an event; it&apos;s a marathon of creativity and tech. Mark your calendars for a day that could change your future.</Balancer>
                         </div>
                     </div>
                 </div>
