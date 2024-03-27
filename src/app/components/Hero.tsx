@@ -39,7 +39,7 @@ export default function Hero() {
                                 </Link>
                             </div>
                             <Balancer className="w-1/2 sm:w-1/2 text-sm sm:text-lg font-light">
-                                Registration is open to all current high school and community college students in the 2023-2024 academic year.
+                                Registration is open to all current high school students in the 2023-2024 academic year.
                             </Balancer>
                         </div>
                         <div className="flex flex-col items-end">
