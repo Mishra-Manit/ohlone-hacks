@@ -4,6 +4,7 @@ import NumberedDetails from './components/NumberedDetails';
 import PostSection from './components/PostSection';
 import Hero from './components/Hero';
 import Footer from "./components/Footer"
+import Schedule from './components/Schedule';
 
 export default function Ohlone() {
     return (
@@ -16,6 +17,7 @@ export default function Ohlone() {
             {/* colored section */}
             <div className="mt-32 bg-[#0045F2] py-10 flex flex-col text-white items-center">
                 {/* CTA */}
+                <Schedule />
                 <div className="py-20 flex flex-col items-center gap-2 md:gap-0">
                     <h1 className="text-[10vw] lg:text-[8vw]">
                         Don&apos;t miss out.

@@ -1,0 +1,197 @@
+'use client'
+import React, { useState } from 'react';
+
+const eventList = [
+    {
+        num: 2,
+        time: "8 am",
+        info: "Check-in",
+        details: [
+            "Check in at door.",
+            "Receive promotional items."
+        ]
+    },
+    {
+        num: 3,
+        time: "9 am",
+        info: "Opening Ceremony",
+        details: [
+            "Welcome speech, introduction of judges, mentors, and sponsors.",
+            "Overview of hackathon theme and rules.",
+            "Finalization of teams."
+        ]
+    },
+    {
+        num: 4,
+        time: "9:30 am",
+        info: "Hacking Begins",
+        details: [
+            "Teams start on their projects.",
+            "Mentors offer guidance."
+        ]
+    },
+    {
+        num: 5,
+        time: "10 am",
+        info: "Intro to Web Dev",
+        details: [
+            "Presented by Divyank Shah, President of UCR ACM"
+        ]
+    },
+    {
+        num: 6,
+        time: "12:30 pm",
+        info: "Lunch Break",
+        details: [
+            "Lunch provided by us.",
+            "Networking opportunity.",
+        ]
+    },
+    {
+        num: 7,
+        time: "1 pm",
+        info: "The Future of AI",
+        details: [
+            "Presented by Professor Banafa from San Francisco Bay University."
+        ]
+    },
+    {
+        num: 8,
+        time: "6:30 pm",
+        info: "Final Stretch of Hacking",
+        details: [
+            "Teams finalize their projects and submit.",
+        ]
+    },
+    {
+        num: 9,
+        time: "6:30 pm",
+        info: "Dinner Break",
+        details: [
+            "Dinner and relaxation.",
+        ]
+    },
+    {
+        num: 10,
+        time: "7pm",
+        info: "Project Presentations",
+        details: [
+            "Teams present their projects to judges.",
+            "Brief Q&A sessions."
+        ]
+    },
+    {
+        num: 11,
+        time: "8:30pm",
+        info: "Judging and Awards Ceremony",
+        details: [
+            "Judges deliberate and announce winners.",
+            "Closing remarks."
+        ]
+    },
+    {
+        num: 12,
+        time: "9pm",
+        info: "Hackathon Concludes",
+        details: [
+            "Final networking and departure.",
+        ]
+    }
+]
+
+function ArrowIcon(props) {
+    let length = props.size.toString();
+    return (
+        <svg
+            width={length}
+            height={length}
+            viewBox="0 0 12 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+        >
+            <path
+                d="M2.07102 11.3494L0.963068 10.2415L9.2017 1.98864H2.83807L2.85227 0.454545H11.8438V9.46023H10.2955L10.3097 3.09659L2.07102 11.3494Z"
+                fill="currentColor"
+            />
+        </svg>
+    );
+}
+
+function EventItem({ time, info, details, isLastVisible }) {
+    const [timeNumber, period] = time.split(/(am|pm)/i);
+    return (
+        <li className={`relative rounded-lg bg-neutral-900 bg-opacity-0 px-8 py-4 text-left ${
+            isLastVisible ? 'blur-effect' : ''
+        }`}>
+            <div className="flex flex-row gap-4 md:gap-8 items-start">
+                {/* yes, i went up 0.1rem LOLLL */}
+                <div className="flex flex-col text-center -mt-[0.1rem] justify-center">
+                    <p className="text-right w-14 md:w-20 font-mono text-xl md:text-3xl">{timeNumber}</p>
+                    <p className="text-right w-14 md:w-20 text-2xl opacity-20 font-mono">
+                        {period}
+                    </p>
+                </div>
+                <div className="font-normal">
+                    <p className="font-mono text-sm opacity-40 uppercase">{info}</p>
+                    <ul className="">
+                        {details.map((detail, index) => {
+                            return (
+                                <div key={index} className="flex flex-row items-start gap-2">
+                                    <p className="font-mono opacity-20">{"//"}</p>
+                                    {detail}
+                                </div>
+                            )
+                        })}
+                    </ul>
+                </div>
+            </div>
+        </li>
+    )
+}
+
+export default function Schedule(props) {
+    const initialVisibleCount = 5;
+    const [visibleCount, setVisibleCount] = useState(initialVisibleCount); // initially show 5 items
+    const [isExpanded, setIsExpanded] = useState(false); // track if the list has been expanded
+
+    const toggleItemsVisibility = () => {
+        if (isExpanded) {
+            setVisibleCount(initialVisibleCount);
+            setIsExpanded(false); // set to not expanded
+        } else {
+            setVisibleCount(eventList.length);
+            setIsExpanded(true); // set to expanded
+        }
+    };
+
+    const isLastVisible = (index) => index === visibleCount - 1 && index !== eventList.length - 1;
+    return (
+        <div className="my-44 flex flex-col items-center justify-center">
+            <ul className="w-full md:w-auto space-y-4">
+                {eventList.slice(0, visibleCount).map((event, index) => (
+                    <EventItem
+                        key={event.num}
+                        time={event.time}
+                        info={event.info}
+                        details={event.details}
+                        isLastVisible={isLastVisible(index)}
+                    />
+                ))}
+            </ul>
+            <button onClick={toggleItemsVisibility} className="
+                w-auto
+                border 
+                text-sm
+                rounded-full
+                hover:bg-white
+                hover:text-[#0045f2]
+                py-2
+                px-4 
+                mt-4
+                transition-all
+            ">
+                {isExpanded ? 'Show Less' : 'Show More'}
+            </button>
+        </div>
+    );
+}

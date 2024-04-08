@@ -69,7 +69,7 @@
   left: 0;
   right: 0;
   height: 300px;
-  background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(23, 24, 28, 1)); /* Use the background color of the items */
+  background: linear-gradient(to bottom, rgba(0, 69, 242, 0), rgba(0,69,242, 1)); /* Use the background color of the items */
 }
 
 .sponsor-logo {
