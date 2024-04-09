@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default function Footer() {
     return (
         <div className="mx-10 font-mono pointer-events-none">
-            <div className="flex justify-between mt-48">
+            <div className="flex justify-between mt-[80vh]">
                 <text>
                     ERIC LAN
                 </text>

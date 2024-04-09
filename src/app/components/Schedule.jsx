@@ -166,7 +166,7 @@ export default function Schedule(props) {
 
     const isLastVisible = (index) => index === visibleCount - 1 && index !== eventList.length - 1;
     return (
-        <div className="my-44 flex flex-col items-center justify-center">
+        <div className="mt-44 mb-[30vh] flex flex-col items-center justify-center">
             <ul className="w-full md:w-auto space-y-4">
                 {eventList.slice(0, visibleCount).map((event, index) => (
                     <EventItem
