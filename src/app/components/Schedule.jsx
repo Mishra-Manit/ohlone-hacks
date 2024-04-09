@@ -125,8 +125,8 @@ function EventItem({ time, info, details, isLastVisible }) {
         }`}>
             <div className="flex flex-row gap-4 md:gap-8 items-start">
                 {/* yes, i went up 0.1rem LOLLL */}
-                <div className="flex flex-col text-center -mt-[0.1rem] justify-center">
-                    <p className="text-right w-14 md:w-20 font-mono text-xl md:text-3xl">{timeNumber}</p>
+                <div className="flex flex-col text-center -mt-[0.1rem] items-end">
+                    <p className="text-right w-14 md:w-32 font-mono text-xl md:text-3xl">{timeNumber}</p>
                     <p className="text-right w-14 md:w-20 text-2xl opacity-20 font-mono">
                         {period}
                     </p>
