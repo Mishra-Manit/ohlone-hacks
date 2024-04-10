@@ -78,3 +78,27 @@
   width: auto;
   object-fit: contain;
 }
+
+.track-card:hover .track-title {
+  opacity: 0;
+}
+
+.track-card:hover .track-description {
+  opacity: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  position: absolute;
+  white-space: pre-wrap;
+  overflow-y: auto;
+  transform: none;
+  text-align: left;
+}
+
+.break-words {
+  overflow-wrap: break-word;
+  hyphens: auto;
+  word-break: break-all;
+}

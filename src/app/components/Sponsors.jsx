@@ -63,13 +63,27 @@ const sponsors = [
         width: 514,
         height: 68,
     },
+    {
+        link: "https://www.codeforcause.dev/",
+        image: "/sponsors/CFC.png",
+        className: 'col-span-1',
+        width: 514,
+        height: 68,
+    },
+    {
+        link: "https://go-dabbl.ai/",
+        image: "/sponsors/dabbl.avif",
+        className: 'col-span-1',
+        width: 514,
+        height: 68,
+    },
 ]
 
 export default function Sponsors({ }) {
     return (
         <div className="my-[20vh] text-center">
             <h2 className="mb-10 opacity-50">OUR SPONSORS</h2>
-            <div className={`mx-20 grid grid-rows-5 grid-cols-2 h-[50vh] md:grid-rows-4 md:grid-cols-3 md:h-[50vh] lg:grid-rows-2 lg:grid-cols-5 lg:h-[20vh] justify-center items-center gap-x-12 gap-y-10 invert`}>
+            <div className={`mx-20 grid grid-flow-row-dense grid-rows-6 grid-cols-2 h-[70vh] md:grid-rows-4 md:grid-cols-3 md:h-[50vh] lg:grid-rows-3 lg:grid-cols-5 lg:h-[30vh] items-center justify-center gap-x-12 gap-y-10 invert`}>
                 {sponsors.map((sponsor, index) => (
                     <a
                         key={index}
