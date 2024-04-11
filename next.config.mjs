@@ -12,6 +12,11 @@ const nextConfig = {
                 destination: '/files/medical.pdf',
                 permanent: true,
             },
+            {
+                source: '/location',
+                destination: 'https://www.ohlone.edu/campus-information',
+                permanent: true,
+            },
         ]
     },
 };

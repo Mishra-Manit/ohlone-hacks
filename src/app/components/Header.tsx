@@ -6,6 +6,9 @@ const navItems = {
 	'/register': {
 		name: 'REGISTER',
 	},
+	'/location': {
+		name: 'MAP',
+	},
 };
 export default function Header() {
 	return (

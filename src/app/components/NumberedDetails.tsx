@@ -28,7 +28,10 @@ export default function NumberedDetails() {
                 <div className="py-10">
                     <div className="flex flex-col sm:flex-row justify-between">
                         <h1 className="w-1/6 font-mono font-light">03</h1>
-                        <h1 className="w-full sm:w-2/6 text-4xl sm:text-3xl">Fremont, CA</h1>
+                        {/* <h1 className="w-full sm:w-2/6 text-4xl sm:text-3xl">Fremont, CA</h1> */}
+                        <h1 className="w-full sm:w-2/6 text-4xl sm:text-3xl">
+                        <StyledLink href="https://www.ohlone.edu/campus-information" target="_blank" text={"Fremont, CA"} className={"w-max"} arrow={true} />
+                        </h1>
                         <div className="w-full sm:w-3/6">
                             <Balancer className="text-sm lg:text-lg text-justify sm:text-left">The epicenter of innovation is at your doorstep. Join us at Ohlone College in Fremont, CA, for a hackathon that&apos;s set to redefine the tech landscape. Where will your ideas take you?
                                 {/* <StyledLink href="/venue" target="_blank" text="found here" arrow={true} /> */}
