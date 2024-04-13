@@ -10,7 +10,7 @@ const eventList = [
             "Welcome and introduction to the event",
             "Acknowledgments to sponsors",
             "Reveal of tracks and prizes",
-            "Demonstration of match-up process"
+            "Demonstration of Marchup process"
         ]
     },
     {
