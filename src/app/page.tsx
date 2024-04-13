@@ -23,7 +23,7 @@ export default function Ohlone() {
             {/* colored section */}
             <div className="mt-32 bg-[#0045F2] py-10 flex flex-col text-white items-center">
                 {/* CTA */}
-                {/* <Schedule /> */}
+                <Schedule />
                 <div className="py-20 flex flex-col items-center gap-2 md:gap-0">
                     <h1 className="text-[10vw] lg:text-[8vw]">
                         Don&apos;t miss out.

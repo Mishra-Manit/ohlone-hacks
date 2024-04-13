@@ -3,101 +3,95 @@ import React, { useState } from 'react';
 
 const eventList = [
     {
-        num: 2,
-        time: "8 am",
-        info: "Check-in",
+        num: 1,
+        time: "8:30 am",
+        info: "Opening Ceremony",
         details: [
-            "Check in at door.",
-            "Receive promotional items."
+            "Welcome and introduction to the event",
+            "Acknowledgments to sponsors",
+            "Reveal of tracks and prizes",
+            "Demonstration of match-up process"
+        ]
+    },
+    {
+        num: 2,
+        time: "9:00 am",
+        info: "Preparation for the Hackathon",
+        details: [
+            "Finalize set-up including food, cables, and additional seating arrangements"
         ]
     },
     {
         num: 3,
-        time: "9 am",
-        info: "Opening Ceremony",
+        time: "12:00 pm",
+        info: "Lunch Service",
         details: [
-            "Welcome speech, introduction of judges, mentors, and sponsors.",
-            "Overview of hackathon theme and rules.",
-            "Finalization of teams."
+            "Commencement of lunch service",
+            "Provision for second helpings as we conclude the meal"
         ]
     },
     {
         num: 4,
-        time: "9:30 am",
-        info: "Hacking Begins",
+        time: "1:30 pm",
+        info: "Git Workshop Introduction",
         details: [
-            "Teams start on their projects.",
-            "Mentors offer guidance."
+            "Beginner's workshop on Git version control"
         ]
     },
     {
         num: 5,
-        time: "10 am",
-        info: "Intro to Web Dev",
+        time: "4:00 pm",
+        info: "Project Submission Briefing",
         details: [
-            "Presented by Divyank Shah, President of UCR ACM"
+            "Guidance on project submission procedures",
+            "Assistance in uploading project work"
         ]
     },
     {
         num: 6,
-        time: "12:30 pm",
-        info: "Lunch Break",
+        time: "5:00 pm",
+        info: "Project Submission Deadline",
         details: [
-            "Lunch provided by us.",
-            "Networking opportunity.",
+            "Deadline for project submissions"
         ]
     },
     {
         num: 7,
-        time: "1 pm",
-        info: "The Future of AI",
+        time: "5:30 pm",
+        info: "Judging Commences",
         details: [
-            "Presented by Professor Banafa from San Francisco Bay University."
+            "Orientation and briefing for judges",
+            "Start of project evaluations"
         ]
     },
     {
         num: 8,
-        time: "6:30 pm",
-        info: "Final Stretch of Hacking",
+        time: "6:00 pm",
+        info: "Judging Concludes",
         details: [
-            "Teams finalize their projects and submit.",
+            "Conclusion of project evaluations",
+            "Distribution of refreshments post-judging"
         ]
     },
     {
         num: 9,
         time: "6:30 pm",
-        info: "Dinner Break",
+        info: "Deliberation and Ceremony",
         details: [
-            "Dinner and relaxation.",
+            "Judges deliberate to select winners",
+            "Preparation for the closing ceremony"
         ]
     },
     {
         num: 10,
-        time: "7pm",
-        info: "Project Presentations",
+        time: "7:00 pm",
+        info: "Awards Presentation and Closing",
         details: [
-            "Teams present their projects to judges.",
-            "Brief Q&A sessions."
-        ]
-    },
-    {
-        num: 11,
-        time: "8:30pm",
-        info: "Judging and Awards Ceremony",
-        details: [
-            "Judges deliberate and announce winners.",
-            "Closing remarks."
-        ]
-    },
-    {
-        num: 12,
-        time: "9pm",
-        info: "Hackathon Concludes",
-        details: [
-            "Final networking and departure.",
+            "Announcement of winners and award distribution",
+            "Formal conclusion of the hackathon"
         ]
     }
-]
+];
 
 function ArrowIcon(props) {
     let length = props.size.toString();
