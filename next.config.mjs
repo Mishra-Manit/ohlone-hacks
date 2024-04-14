@@ -13,6 +13,11 @@ const nextConfig = {
                 permanent: true,
             },
             {
+                source: '/presentation',
+                destination: '/files/presentation.pdf',
+                permanent: true,
+            },
+            {
                 source: '/location',
                 destination: 'https://www.ohlone.edu/campus-information',
                 permanent: true,
