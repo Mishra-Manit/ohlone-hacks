@@ -9,7 +9,7 @@ const tracks = [
     },
     {
         name: "Code for Cause",
-        description: "- Effectiveness of tackling a social/environmental issue\n- Focus on community improvement\n- Sustainable and scalable project"
+        description: "- Effectiveness of tackling a social/environmental issue\n- Focus on community improvement\n- Sustainable and scalable project\n- More info at codeforcause.dev/ohlone"
     },
     {
         name: "Health & Wellness",
@@ -27,7 +27,7 @@ export default function TrackDetails() {
                 {tracks.map((track, index) => (
                     <div key={index} className="track-card h-[50vh] lg:h-[30vh] rounded-xl hover:-translate-y-2 text-white bg-[#0045F2] hover:shadow-xl transition-all duration-300 p-10 relative overflow-hidden">
                         <h1 className={`track-title text-4xl opacity-100 transition-opacity duration-0 ease-in-out hyphens-auto ${track.name === "Entertainment" ? "break-words" : ""}`}>{track.name}</h1>
-                        <p className="track-description text-xl absolute opacity-0 transition-opacity duration-0 ease-in-out p-10 w-full h-full">{track.description}</p>
+                        <p className="track-description text-md xl:text-xl absolute opacity-0 transition-opacity duration-0 ease-in-out p-10 w-full h-full">{track.description}</p>
                     </div>
                 ))}
             </div>

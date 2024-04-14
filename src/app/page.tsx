@@ -19,7 +19,7 @@ export default function Ohlone() {
             <Sponsors />
             <PostSection />
             <NumberedDetails />
-            {/* <TrackDetails /> */}
+            <TrackDetails />
             {/* colored section */}
             <div className="mt-32 bg-[#0045F2] py-10 flex flex-col text-white items-center">
                 {/* CTA */}
