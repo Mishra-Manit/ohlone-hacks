@@ -17,11 +17,11 @@ const nextConfig = {
                 destination: '/files/presentation.pdf',
                 permanent: true,
             },
-            {
-                source: '/key',
-                destination: '/files/api-key.txt',
-                permanent: true,
-            },
+            // {
+            //     source: '/key',
+            //     destination: '/files/api-key.txt',
+            //     permanent: true,
+            // },
             {
                 source: '/location',
                 destination: 'https://www.ohlone.edu/campus-information',
