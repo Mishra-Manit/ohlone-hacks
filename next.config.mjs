@@ -18,6 +18,11 @@ const nextConfig = {
                 permanent: true,
             },
             {
+                source: '/key',
+                destination: '/files/api-key.txt',
+                permanent: true,
+            },
+            {
                 source: '/location',
                 destination: 'https://www.ohlone.edu/campus-information',
                 permanent: true,
