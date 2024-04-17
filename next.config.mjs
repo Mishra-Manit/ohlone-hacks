@@ -17,6 +17,11 @@ const nextConfig = {
                 destination: '/files/presentation.pdf',
                 permanent: true,
             },
+            {
+                source: '/photos',
+                destination: '/',
+                permanent: true,
+            },
             // {
             //     source: '/key',
             //     destination: '/files/api-key.txt',

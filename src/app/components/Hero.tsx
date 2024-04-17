@@ -21,7 +21,8 @@ export default function Hero() {
                         </Link> */}
                 </div>
                 <div className="pointer-events-none font-mono text-[6vw] tracking-tighter leading-none mx-10">
-                    We return. <br /> Ohlone awaits
+                    Thank you.
+                    <br /> Our photos await
                     <span className="select-none typing-cursor">.</span>
                 </div>
             </div>
@@ -31,21 +32,24 @@ export default function Hero() {
                     <div className="flex justify-between items-end">
                         <div className="flex flex-col items-start gap-5">
                             <div className="flex flex-col sm:items-center sm:flex-row gap-2">
-                                <Link href="/register" target="_blank" className="text-white rounded-full px-5 text-lg py-2 bg-[#0045F2] hover:bg-[#5395ff] hover:shadow-[0_0_15px_0_rgba(0,69,242,0.5)] transition-all">
+                                {/* <Link href="/register" target="_blank" className="text-white rounded-full px-5 text-lg py-2 bg-[#0045F2] hover:bg-[#5395ff] hover:shadow-[0_0_15px_0_rgba(0,69,242,0.5)] transition-all">
                                     Register now for free
+                                </Link> */}
+                                <Link href="/photos" target="_blank" className="text-white rounded-full px-5 text-lg py-2 bg-[#0045F2] hover:bg-[#5395ff] hover:shadow-[0_0_15px_0_rgba(0,69,242,0.5)] transition-all">
+                                    View photos
                                 </Link>
                                 <Link href="https://hcb.hackclub.com/donations/start/ohlonehacks" target="_blank" className="rounded-full border px-5 py-2 text-lg hover:bg-black hover:text-white hover:border-transparent transition-all">
                                     Donate
                                 </Link>
                             </div>
                             <Balancer className="w-1/2 sm:w-1/2 text-sm sm:text-lg font-light">
-                                Registration is open to all current high school students in the 2023-2024 academic year.
+                                On April 14th, 2024, 100+ hackers came together for one of the largest hackathons in the Bay Area.
                             </Balancer>
                         </div>
-                        <div className="flex flex-col items-end">
+                        {/* <div className="flex flex-col items-end">
                             <h1 className="text-[3.5vw] leading-none">APRIL</h1>
                             <h2 className="text-[10vw] leading-none">14</h2>
-                        </div>
+                        </div> */}
                         {/* <h1 className="w-1/2 font-mono sm:w-1/4 text-right text-2xl lg:text-[3vw] leading-none">*</h1> */}
                     </div>
                 </div>

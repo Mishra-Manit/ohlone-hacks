@@ -3,9 +3,9 @@ import StyledLink from "./StyledLink";
 import Link from 'next/link';
 
 const navItems = {
-	'/register': {
-		name: 'REGISTER',
-	},
+	// '/register': {
+	// 	name: 'REGISTER',
+	// },
 	'/location': {
 		name: 'MAP',
 	},
