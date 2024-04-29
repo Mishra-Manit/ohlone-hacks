@@ -19,7 +19,7 @@ const nextConfig = {
             },
             {
                 source: '/photos',
-                destination: '/',
+                destination: 'https://photos.app.goo.gl/hjRMApBbbZ1WJsDz5',
                 permanent: true,
             },
             // {
